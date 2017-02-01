@@ -161,7 +161,8 @@ as required. \hfill $\qed$
 \begin{solution} \hfill \\
 Consider $A = \mathbb{R}[x,y]$, and $\mathfrak{a} = \mathfrak{b} = (x,y)$. 
 Then, $x^2 , y^2 \in \{ab : a \in \mathfrak{a}, b \in \mathfrak{b}\}$, 
-but $x^2 + y^2 \not\in \{ab : a \in \mathfrak{a}, b \in \mathfrak{b} \}$.   
+but $x^2 + y^2 \not\in \{ab : a \in \mathfrak{a}, b \in \mathfrak{b} \}$.  \hfill 
+$\qed$ 
 \end{solution}
 
 \newpage
@@ -190,8 +191,59 @@ are associates.
 
 \bigskip
 
-\noindent \textbf{(b)} 
- 
+\noindent \textbf{(b)} We wish to show
+\eQb
+(ab) &=& \{ abx \> | \> x \in A\} = \{ax \> | \> x \in A\} \{ bx \> | \> x \in A\}
+= (a)(b). 
+\eQe 
+For any $x \in A$, $abx = (ab)x$, so it is clear that 
+\eQb
+(ab) \subset (a)(b).
+\eQe
+Now, for $axby$ for any $x,y \in A$, $axby = abxy$ so 
+\eQb
+(a)(b) \subset (ab),
+\eQe
+which completes the proof.
+
+\bigskip 
+
+\noindent \textbf{(c)} Suppose $(b) \subset (a)$. Then, for any $x \in A$,
+$bx = ay$ for some $y \in A$, and as $A$ is an integral domain, $b = ayx^{-1}$, so
+$a|b$. Now, if $a|b$ then, by definition, $b = ay$ for some $y \in A$. Then,
+for any $x \in A$, $bx = ayx$, so $(b) \subset (a)$, and we are done.
+
+\bigskip
+
+\noindent \textbf{(d)} Suppose $(a)$ is not contained in $(b)$. Then, there exists
+$e \in A$, such that for all $y \in A$, $ae \neq by$.
+
+\bigskip
+
+\noindent \textbf{(e)} We have the following sequence of equivalence: 
+\eQb
+a \>\>\> \text{is irreducible} &\iff& \forall b,x \in A, \exists y \in A \> .s.t 
+>\>\> bx = ay \\ 
+&\iff& \forall b \in A,  (b) \subset (a).
+\eQe
+
+\bigskip
+
+\noindent \textbf{(f)} We have the following sequence of equivalence:
+\eQb
+(a) \>\>\> \text{is prime} &\iff& \forall b,c \in A, (bc = az \>\>\> \text{for some}
+z \in A \implies a|b \>\>\> \text{or} \>\>\> a|c) \\
+&\iff& a \>\>\> \text{is prime}.
+\eQe
+
+\bigskip
+
+\noindent \textbf{(g)} We have the following sequence of equivalence:
+\eQb
+a \>\>\> \text{is unit} &\iff& \text{there exists} \>\>\> b \in A \>\> s.t. \>\> ab = 1 \\
+&\iff& 1 \in (a) \iff (a) \>\>\> \text{is unit ideal}, 
+\eQe
+which completes the proof. \hfill $\qed$
 
 \end{solution}
 
